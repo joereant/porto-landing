@@ -1,0 +1,9 @@
+# Windows Thumbnail Cache
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Temp files
+*.tmp
+*.TMP
+*~
