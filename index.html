@@ -23,8 +23,8 @@
     <meta name="twitter:description" content="Data Analyst • Web Developer • Photographer">
     <meta name="twitter:image" content="https://joereant.my.id/assets/images/foto.webp">
     
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS (Static Compiled) -->
+    <link rel="stylesheet" href="assets/css/output.css">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -209,17 +209,6 @@
     </style>
     
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#667eea',
-                        secondary: '#764ba2',
-                    }
-                }
-            }
-        }
-        
         // Initialize theme on page load
         function initTheme() {
             const savedTheme = localStorage.getItem('theme');

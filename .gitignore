@@ -7,3 +7,6 @@ desktop.ini
 *.tmp
 *.TMP
 *~
+
+# Dependency directories
+node_modules/
