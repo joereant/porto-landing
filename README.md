@@ -3,7 +3,7 @@
 [![Website](https://img.shields.io/badge/Website-joereant.my.id-blueviolet?style=for-the-badge)](https://joereant.my.id)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Joe_Reant-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joereant/)
 
-Repositori ini berisi kode sumber (*source code*) untuk website portofolio pribadi saya. Website ini dirancang untuk menampilkan keahlian dan karya saya di bidang **Data Analysis**, **Web Development**, dan **Photography**.
+Repositori ini berisi kode sumber (*source code*) untuk website portofolio pribadi saya. Website ini dirancang untuk menampilkan keahlian dan karya saya di bidang **Data Analytics**, **Web Development**, **AI Solutions**, dan **Photography**.
 
 Tampilan website live dapat diakses di: **[joereant.my.id](https://joereant.my.id)**
 
@@ -11,11 +11,12 @@ Tampilan website live dapat diakses di: **[joereant.my.id](https://joereant.my.i
 
 ## ✨ Fitur Utama
 * 🌓 **Dark / Light Mode Toggle:** Dukungan mode gelap dan terang yang mulus (menyimpan preferensi pengguna via `localStorage`).
-* 🔮 **Glassmorphism Design:** Desain antarmuka modern menggunakan efek kaca transparan (*backdrop blur*) yang estetik.
+* 🎯 **Split-Screen Layout:** Desain layout 50/50 — panel kiri slideshow foto otomatis, panel kanan scrollable untuk konten.
 * 📱 **Fully Responsive:** Layout adaptif yang nyaman dilihat dari berbagai perangkat (desktop, tablet, dan smartphone).
 * ✉️ **Serverless Contact Form:** Integrasi formulir kontak langsung ke email menggunakan API **Web3Forms** tanpa membutuhkan server backend.
 * 🚀 **Smooth Scroll & Reveal Animations:** Navigasi halus antar-bagian dan efek animasi kemunculan elemen saat di-scroll untuk pengalaman pengguna yang dinamis.
 * 📊 **Cloudflare Web Analytics:** Pemantauan statistik pengunjung yang aman dan menjaga privasi pengguna.
+* 🤖 **AI Solutions Showcase:** Khususnya LLMs, automation, dan machine learning — membangun alur kerja yang lebih cerdas.
 
 ---
 
@@ -23,7 +24,7 @@ Tampilan website live dapat diakses di: **[joereant.my.id](https://joereant.my.i
 * **Struktur & Markup:** HTML5 (Semantic elements)
 * **Styling (CSS):** Tailwind CSS (Utility-first CSS framework)
 * **Ikon:** FontAwesome 6
-* **Font:** Google Fonts (Inter)
+* **Font:** Google Fonts (Space Grotesk, Inter, JetBrains Mono, Caveat)
 * **Hosting Deployment:** Nginx (Containerized) di server lokal, dihubungkan via Cloudflare Zero Trust Tunnel.
 
 ---
@@ -48,7 +49,10 @@ Untuk membuka dan melihat website ini di komputer lokal Anda:
 * **Website:** [joereant.my.id](https://joereant.my.id)
 * **LinkedIn:** [linkedin.com/in/joereant](https://www.linkedin.com/in/joereant/)
 * **Instagram:** [@joereant](https://instagram.com/joereant)
+* **Twitter / X:** [@joeReAnT](https://x.com/joeReAnT)
+* **WhatsApp:** [+62 811-6693-87](https://wa.me/62811669387)
 * **Email:** [pilianjolo.reant@gmail.com](mailto:pilianjolo.reant@gmail.com)
 
 ---
+
 *Dibuat dengan ❤️ oleh Joe Reant.*
