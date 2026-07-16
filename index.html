@@ -50,7 +50,6 @@
 
     <style>
 :root { --bg: #0A0A0A; --fg: #E8E8E0; --muted: rgba(255,255,255,0.45); --border: rgba(255,255,255,0.06); --nav-bg: rgba(10,10,10,0.9); }
-.light { --bg: #F5F5F0; --fg: #1A1A18; --muted: rgba(0,0,0,0.5); --border: rgba(0,0,0,0.08); --nav-bg: rgba(245,245,240,0.9); }
         html, body { background: var(--bg); color: var(--fg); margin: 0; }
 
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.7s ease; }
@@ -61,35 +60,10 @@
 
         .service-card { border: 1px solid var(--border); transition: all 0.3s ease; }
         .service-card:hover { border-color: rgba(255,255,255,0.14); background: rgba(255,255,255,0.015); }
-        .light .service-card:hover { border-color: rgba(0,0,0,0.15); background: rgba(0,0,0,0.02); }
 
         .project-row { border-bottom: 1px solid var(--border); transition: all 0.3s ease; }
         .project-row:last-child { border-bottom: none; }
         .project-row:hover { background: rgba(255,255,255,0.01); }
-        .light .project-row:hover { background: rgba(0,0,0,0.02); }
-
-        .light .split-right .text-white { color: var(--fg); }
-        .light .split-right .text-white\/80 { color: var(--fg); opacity: 0.85; }
-        .light .split-right .text-white\/70 { color: var(--fg); opacity: 0.75; }
-        .light .split-right .text-white\/60 { color: var(--fg); opacity: 0.65; }
-        .light .split-right .text-white\/55 { color: var(--fg); opacity: 0.6; }
-        .light .split-right .text-white\/50 { color: var(--fg); opacity: 0.55; }
-        .light .split-right .text-white\/45 { color: var(--fg); opacity: 0.5; }
-        .light .split-right .text-white\/40 { color: var(--fg); opacity: 0.45; }
-        .light .split-right .text-white\/35 { color: var(--fg); opacity: 0.4; }
-        .light .split-right .text-white\/30 { color: var(--fg); opacity: 0.35; }
-        .light .split-right .text-white\/25 { color: var(--fg); opacity: 0.3; }
-        .light .split-right .text-white\/20 { color: var(--fg); opacity: 0.25; }
-        .light .split-right .text-white\/15 { color: var(--fg); opacity: 0.2; }
-        .light .split-right .text-white\/10 { color: var(--fg); opacity: 0.15; }
-        .light .split-right [class*="border-white"] { border-color: var(--border); }
-        .light .split-right .btn-primary { background-color: rgba(230,230,225,0.9); }
-        .light .split-right input, .light .split-right textarea { color: var(--fg); }
-        .light .split-right .placeholder\\:text-white\/25::placeholder { color: rgba(26,26,24,0.3); }
-        .light .split-right .hover\\:border-white:hover { border-color: var(--border); }
-        .light .split-right .hover\\:text-white:hover { color: var(--fg); }
-        .light .split-right .hover\\:text-\[\#0A0A0A\]:hover { color: var(--fg); }
-        .light .split-right .hover\\:bg-white:hover { background-color: rgba(0,0,0,0.05); }
 
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--fg); transition: width 0.3s ease; }
@@ -98,7 +72,6 @@
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: var(--bg); }
         ::-webkit-scrollbar-thumb { background: #333; }
-        .light ::-webkit-scrollbar-thumb { background: #ccc; }
 
         input, textarea { transition: all 0.25s ease; }
         input:focus, textarea:focus { border-color: rgba(255,255,255,0.3) !important; }
@@ -193,9 +166,7 @@
                 <a href="#work" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Work</a>
                 <a href="#photo" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Photo</a>
                 <a href="#contact" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Contact</a>
-                <button id="themeToggle" class="text-sm hover:opacity-70 transition" style="color:var(--muted)" aria-label="Toggle theme">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>
+
             </div>
         </nav>
 
@@ -496,29 +467,7 @@
             });
         })();
 
-        // Theme toggle
-        (function() {
-            var html = document.documentElement;
-            var btn = document.getElementById('themeToggle');
-            var icon = document.getElementById('themeIcon');
-            var stored = localStorage.getItem('theme');
-            if (stored === 'light') html.classList.add('light');
-
-            function setIcon() {
-                icon.className = html.classList.contains('light') ? 'fas fa-sun' : 'fas fa-moon';
-            }
-            setIcon();
-
-            if (btn) {
-                btn.addEventListener('click', function() {
-                    html.classList.toggle('light');
-                    localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark');
-                    setIcon();
-                });
-            }
-        })();
-
-        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        // Smooth scroll
             a.addEventListener('click', function(e) {
                 e.preventDefault();
                 var t = document.querySelector(this.getAttribute('href'));

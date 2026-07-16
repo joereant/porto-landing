@@ -10,7 +10,6 @@ Tampilan website live dapat diakses di: **[joereant.my.id](https://joereant.my.i
 ---
 
 ## ✨ Fitur Utama
-* 🌓 **Dark / Light Mode Toggle:** Dukungan mode gelap dan terang yang mulus (menyimpan preferensi pengguna via `localStorage`).
 * 🎯 **Split-Screen Layout:** Desain layout 50/50 — panel kiri slideshow foto otomatis, panel kanan scrollable untuk konten.
 * 📱 **Fully Responsive:** Layout adaptif yang nyaman dilihat dari berbagai perangkat (desktop, tablet, dan smartphone).
 * ✉️ **Serverless Contact Form:** Integrasi formulir kontak langsung ke email menggunakan API **Web3Forms** tanpa membutuhkan server backend.
