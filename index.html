@@ -3,704 +3,539 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joe Reant | Data Analyst • Web Developer • Photographer</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Joe Reant - Professional Data Analyst, Web Developer, and Photographer. Transforming data into insights, ideas into code, and moments into memories.">
-    <meta name="keywords" content="data analyst, web developer, photographer, portfolio, joe reant, power bi, web development, photography">
+    <title>Joe Reant — Data Analyst · System Developer · AI Enthusiast · Photographer</title>
+    <meta name="description" content="Joe Reant — Data Analyst, System Developer, AI Enthusiast, and Photographer. Turning data into decisions, ideas into systems, workflows into automation.">
     <meta name="author" content="Joe Reant">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Joe Reant | Data Analyst • Web Developer • Photographer">
-    <meta property="og:description" content="Professional portfolio showcasing data analysis, web development, and photography work.">
-    <meta property="og:image" content="https://joereant.my.id/assets/images/foto.webp">
-    <meta property="og:url" content="https://joereant.my.id">
+    <meta name="keywords" content="data analyst, web developer, AI, Indonesia, portfolio, Joe Reant, data analytics, Python, SQL, Power BI">
+    <link rel="canonical" href="https://joereant.my.id/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
+    <meta property="og:title" content="Joe Reant — Data · Web · AI">
+    <meta property="og:description" content="Data Analyst, System Developer, AI Enthusiast, and Photographer. I turn data into decisions, ideas into systems, workflows into automation.">
+    <meta property="og:url" content="https://joereant.my.id/">
+    <meta property="og:image" content="https://joereant.my.id/assets/images/FER_9430.jpg">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Joe Reant | Portfolio">
-    <meta name="twitter:description" content="Data Analyst • Web Developer • Photographer">
-    <meta name="twitter:image" content="https://joereant.my.id/assets/images/foto.webp">
-    
-    <!-- Tailwind CSS (Static Compiled) -->
+    <meta name="twitter:title" content="Joe Reant — Data · Web · AI">
+    <meta name="twitter:description" content="Data Analyst · System Developer · AI Enthusiast · Photographer.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Joe Reant",
+        "givenName": "Pilianjolo",
+        "familyName": "Reant",
+        "jobTitle": "Data Analyst & Web Developer",
+        "description": "Data Analyst, System Developer, AI Enthusiast, and Photographer based in Indonesia.",
+        "url": "https://joereant.my.id/",
+        "email": "pilianjolo.reant@gmail.com",
+        "image": "https://joereant.my.id/assets/images/FER_9430.jpg",
+        "sameAs": [
+            "https://github.com/joereant",
+            "https://www.linkedin.com/in/joereant/",
+            "https://instagram.com/joereant",
+            "https://x.com/joeReAnT"
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="assets/css/output.css">
-    
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        
-        /* Custom Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        /* Gradient Text - Dark Theme */
-        .gradient-text-dark {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        /* Gradient Text - Light Theme */
-        .gradient-text-light {
-            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        /* Glassmorphism - Dark */
-        .glass-dark {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Glassmorphism - Light */
-        .glass-light {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            box-shadow: 0 4px 6px rgba(139, 92, 246, 0.1);
-        }
-        
-        /* Morphing Animation */
-        @keyframes morph {
-            0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-        }
-        
-        .morph {
-            animation: morph 8s ease-in-out infinite;
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-        }
-        
-        /* Light Mode Styles */
-        .light-mode {
-            background: linear-gradient(to bottom right, #faf5ff, #f3e8ff, #e9d5ff) !important;
-            color: #1e1b4b !important;
-        }
-        
-        .light-mode input,
-        .light-mode textarea {
-            background-color: rgba(255, 255, 255, 0.6) !important;
-            color: #1e1b4b !important;
-            border-color: rgba(139, 92, 246, 0.3) !important;
-        }
-        
-        .light-mode input::placeholder,
-        .light-mode textarea::placeholder {
-            color: #7e22ce !important;
-            opacity: 0.6;
-        }
-        
-        .light-mode .text-white {
-            color: #1e1b4b !important;
-        }
-        
-        /* Proteksi agar tombol/link yang dasarnya gelap tetap ber-text putih */
-        .light-mode button.text-white,
-        .light-mode a.text-white,
-        .light-mode button .text-white,
-        .light-mode a .text-white,
-        .light-mode .bg-green-600 .text-white {
-            color: #ffffff !important;
-        }
-        
-        .light-mode .text-gray-300 {
-            color: #6b21a8 !important;
-        }
-        
-        .light-mode .text-gray-400 {
-            color: #7e22ce !important;
-        }
-        
-        .light-mode .border-white\/10 {
-            border-color: rgba(139, 92, 246, 0.2) !important;
-        }
-        
-        /* Portfolio Boxes - Light Mode Override */
-        .light-mode #portfolio-photo {
-            background: linear-gradient(to bottom right, #fda4af, #fbbf24) !important;
-        }
-        
-        .light-mode #portfolio-landing {
-            background: linear-gradient(to bottom right, #d8b4fe, #f9a8d4, #c4b5fd) !important;
-        }
-        
-        .light-mode #portfolio-powerbi {
-            background: linear-gradient(to bottom right, #93c5fd, #a5f3fc) !important;
-        }
-        
-        .light-mode #portfolio-coming {
-            background: linear-gradient(to bottom right, #e9d5ff, #fbcfe8) !important;
-        }
-        
-        /* Portfolio Text Light Mode */
-        .light-mode #portfolio .text-white {
-            color: #1e1b4b !important;
-        }
-        
-        .light-mode #portfolio .text-white\/80 {
-            color: #4c1d95 !important;
-        }
-        
-        .light-mode #portfolio .text-white\/60 {
-            color: #6b21a8 !important;
-        }
-        
-        /* Portfolio Hover - Text putih saat hover */
-        .light-mode #portfolio .group:hover .text-white,
-        .light-mode #portfolio .group:hover .text-gray-300,
-        .light-mode #portfolio .group:hover .text-xs,
-        .light-mode #portfolio .group:hover h4,
-        .light-mode #portfolio .group:hover p,
-        .light-mode #portfolio .group:hover span {
-            color: #ffffff !important;
-        }
+:root { --bg: #0A0A0A; --fg: #E8E8E0; --muted: rgba(255,255,255,0.45); --border: rgba(255,255,255,0.06); --nav-bg: rgba(10,10,10,0.9); }
+.light { --bg: #F5F5F0; --fg: #1A1A18; --muted: rgba(0,0,0,0.5); --border: rgba(0,0,0,0.08); --nav-bg: rgba(245,245,240,0.9); }
+        html, body { background: var(--bg); color: var(--fg); margin: 0; }
 
-        /* Loading Screen */
-        #loader {
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.7s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        .proj-img { filter: grayscale(0.6); transition: filter 0.4s ease; }
+        .proj-img:hover { filter: grayscale(0); }
+
+        .service-card { border: 1px solid var(--border); transition: all 0.3s ease; }
+        .service-card:hover { border-color: rgba(255,255,255,0.14); background: rgba(255,255,255,0.015); }
+        .light .service-card:hover { border-color: rgba(0,0,0,0.15); background: rgba(0,0,0,0.02); }
+
+        .project-row { border-bottom: 1px solid var(--border); transition: all 0.3s ease; }
+        .project-row:last-child { border-bottom: none; }
+        .project-row:hover { background: rgba(255,255,255,0.01); }
+        .light .project-row:hover { background: rgba(0,0,0,0.02); }
+
+        .light .split-right .text-white { color: var(--fg); }
+        .light .split-right .text-white\/80 { color: var(--fg); opacity: 0.85; }
+        .light .split-right .text-white\/70 { color: var(--fg); opacity: 0.75; }
+        .light .split-right .text-white\/60 { color: var(--fg); opacity: 0.65; }
+        .light .split-right .text-white\/55 { color: var(--fg); opacity: 0.6; }
+        .light .split-right .text-white\/50 { color: var(--fg); opacity: 0.55; }
+        .light .split-right .text-white\/45 { color: var(--fg); opacity: 0.5; }
+        .light .split-right .text-white\/40 { color: var(--fg); opacity: 0.45; }
+        .light .split-right .text-white\/35 { color: var(--fg); opacity: 0.4; }
+        .light .split-right .text-white\/30 { color: var(--fg); opacity: 0.35; }
+        .light .split-right .text-white\/25 { color: var(--fg); opacity: 0.3; }
+        .light .split-right .text-white\/20 { color: var(--fg); opacity: 0.25; }
+        .light .split-right .text-white\/15 { color: var(--fg); opacity: 0.2; }
+        .light .split-right .text-white\/10 { color: var(--fg); opacity: 0.15; }
+        .light .split-right [class*="border-white"] { border-color: var(--border); }
+        .light .split-right .btn-primary { background-color: rgba(230,230,225,0.9); }
+        .light .split-right input, .light .split-right textarea { color: var(--fg); }
+        .light .split-right .placeholder\\:text-white\/25::placeholder { color: rgba(26,26,24,0.3); }
+        .light .split-right .hover\\:border-white:hover { border-color: var(--border); }
+        .light .split-right .hover\\:text-white:hover { color: var(--fg); }
+        .light .split-right .hover\\:text-\[\#0A0A0A\]:hover { color: var(--fg); }
+        .light .split-right .hover\\:bg-white:hover { background-color: rgba(0,0,0,0.05); }
+
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: var(--fg); transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: #333; }
+        .light ::-webkit-scrollbar-thumb { background: #ccc; }
+
+        input, textarea { transition: all 0.25s ease; }
+        input:focus, textarea:focus { border-color: rgba(255,255,255,0.3) !important; }
+
+        .split-left {
             position: fixed;
-            inset: 0;
-            background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
+            top: 0;
+            left: 0;
+            width: 50vw;
+            height: 100vh;
+            z-index: 10;
+            overflow: hidden;
         }
-
-        .light-mode #loader {
-            background: linear-gradient(to bottom right, #faf5ff, #f3e8ff, #e9d5ff);
+        .split-right {
+            margin-left: 50vw;
+            min-height: 100vh;
         }
-
-        /* Scroll to Top Button */
-        #scrollTop {
-            transition: all 0.3s ease;
-        }
-
-        /* Smooth reveal animation */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
-    
-    <script>
-        // Initialize theme on page load
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
-            if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
-                document.body.classList.add('light-mode');
-                const icon = document.getElementById('theme-icon');
-                if (icon) {
-                    icon.className = 'fas fa-sun text-2xl';
-                }
+        @media (max-width: 768px) {
+            .split-left {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+            .split-right {
+                margin-left: 0;
             }
         }
-        
-        // Run on load
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initTheme);
-        } else {
-            initTheme();
+
+        .photo-layer {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.8s ease;
         }
-    </script>
+        .photo-layer.active { opacity: 1; }
+        .photo-layer img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.8); }
+
+        .content-wrap { max-width: 560px; }
+        .page-section { min-height: calc(100vh - 56px); }
+        .page-section-full { min-height: calc(100vh - 56px); }
+        .btn-primary { transition: all 0.3s ease; }
+    </style>
 </head>
+<body class="antialiased">
 
-<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <!-- LEFT PANEL -->
+    <div class="split-left">
+        <div class="photo-layer active" data-photo="0">
+            <img src="assets/images/FER_9430.jpg" alt="Joe Reant">
+        </div>
+        <div class="photo-layer" data-photo="1">
+            <img src="assets/images/bg-data.jpg" alt="Data Analytics">
+        </div>
+        <div class="photo-layer" data-photo="2">
+            <img src="assets/images/bg-code.jpg" alt="Web Development">
+        </div>
+        <div class="photo-layer" data-photo="3">
+            <img src="assets/images/bg-photo.jpg" alt="Photography" style="object-position:right">
+        </div>
+        <div class="photo-layer" data-photo="4">
+            <img src="assets/images/bg-contact.jpg" alt="Contact" style="filter:grayscale(0.8);object-position:center 25%">
+        </div>
 
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="text-center">
-            <div class="w-20 h-20 border-4 border-purple-600 border-t-transparent rounded-full animate-spin mb-4 mx-auto"></div>
-            <p class="text-xl gradient-text-dark font-bold">Loading...</p>
+        <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(to top, rgba(10,10,10,0.8), transparent 40%, transparent)"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10 pointer-events-none">
+            <h1 class="font-display text-3xl md:text-5xl font-bold tracking-tight text-white">Joe Reant</h1>
+            <p class="font-mono text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/40 mt-1">Data Analyst · System Developer · AI Enthusiast · Photographer</p>
+        </div>
+
+        <div class="absolute bottom-2 md:bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-10 md:translate-x-0 flex gap-2 pointer-events-none">
+            <span class="slide-dot w-2 h-2 rounded-full bg-white/80"></span>
+            <span class="slide-dot w-2 h-2 rounded-full bg-white/20"></span>
+            <span class="slide-dot w-2 h-2 rounded-full bg-white/20"></span>
+            <span class="slide-dot w-2 h-2 rounded-full bg-white/20"></span>
+            <span class="slide-dot w-2 h-2 rounded-full bg-white/20"></span>
+        </div>
+
+        <div class="absolute top-6 left-6 md:top-8 md:left-8 flex items-center gap-2 pointer-events-none">
+            <span class="w-2 h-2 rounded-full bg-green-400/70"></span>
+            <span class="font-mono text-[9px] tracking-[0.25em] uppercase text-white/50">Available</span>
         </div>
     </div>
 
-    <!-- Theme Toggle Button -->
-    <button onclick="toggleTheme()" id="theme-toggle-btn" class="fixed bottom-6 left-6 w-16 h-16 glass-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 animate-float cursor-pointer hover:bg-purple-600">
-        <i id="theme-icon" class="fas fa-moon text-2xl"></i>
-    </button>
+    <!-- RIGHT PANEL -->
+    <div class="split-right" style="background:var(--bg)">
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollTop" class="fixed bottom-24 left-1/2 -translate-x-1/2 w-12 h-12 glass-dark rounded-full items-center justify-center shadow-xl hover:scale-110 transition-all z-40 hidden animate-float">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Floating Navigation -->
-    <nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-5xl">
-        <div class="glass-dark rounded-full px-6 py-4 flex justify-between items-center shadow-2xl">
-            <div class="text-xl font-bold gradient-text-dark">
-                @JoeReant
-            </div>
-            
-            <!-- Desktop Menu -->
-            <ul class="hidden md:flex space-x-8 items-center">
-                <li><a href="#home" class="hover:text-purple-400 transition">Home</a></li>
-                <li><a href="#services" class="hover:text-purple-400 transition">Services</a></li>
-                <li><a href="#portfolio" class="hover:text-purple-400 transition">Portfolio</a></li>
-                <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
-            </ul>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden glass-dark rounded-3xl mt-4 px-6 py-6">
-            <ul class="space-y-4">
-                <li><a href="#home" class="block hover:text-purple-400 transition">Home</a></li>
-                <li><a href="#services" class="block hover:text-purple-400 transition">Services</a></li>
-                <li><a href="#portfolio" class="block hover:text-purple-400 transition">Portfolio</a></li>
-                <li><a href="#contact" class="block hover:text-purple-400 transition">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-20">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Left: Image -->
-                <div class="order-2 md:order-1 flex justify-center reveal">
-                    <div class="relative">
-                        <!-- Blob Background -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 morph opacity-50"></div>
-                        
-                        <!-- Profile Image -->
-                        <div class="relative w-72 h-72 md:w-96 md:h-96 morph overflow-hidden border-4 border-white/20 shadow-2xl">
-                            <img src="assets/images/foto.webp" 
-                                 alt="Joe Reant - Data Analyst, Web Developer, Photographer" 
-                                 class="w-full h-full object-cover"
-                                 loading="eager">
-                        </div>
-                        
-                        <!-- Floating Badge -->
-                        <div class="absolute -bottom-4 -right-4 glass-dark px-6 py-3 rounded-full shadow-xl animate-float">
-                            <span class="text-2xl">📊💻📸</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Right: Text -->
-                <div class="order-1 md:order-2 text-center md:text-left reveal">
-                    <div class="mb-6">
-                        <span class="glass-dark px-4 py-2 rounded-full text-sm">👋 Welcome to my portfolio</span>
-                    </div>
-                    
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                        Hi, I'm <span class="gradient-text-dark">Joe Reant</span>
-                    </h1>
-                    
-                    <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">
-                        Data Analyst • Web Developer • Photographer
-                    </h2>
-                    
-                    <p class="text-lg text-gray-400 mb-10 max-w-xl">
-                        Transforming data into insights, ideas into code, and moments into memories.
-                    </p>
-                    
-                    <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-8">
-                        <a href="#portfolio" class="bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all text-white">
-                            View My Work
-                        </a>
-                        <a href="#contact" class="glass-dark px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all">
-                            Get In Touch
-                        </a>
-                    </div>
-                    
-                    <!-- Social Media Links -->
-                    <div class="flex gap-4 justify-center md:justify-start">
-                        <a href="https://instagram.com/joereant" target="_blank" rel="noopener noreferrer" class="glass-dark w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition-all" aria-label="Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/joereant/" target="_blank" rel="noopener noreferrer" class="glass-dark w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 hover:bg-blue-600 transition-all" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in text-xl"></i>
-                        </a>
-                        <a href="https://x.com/joeReAnT" target="_blank" rel="noopener noreferrer" class="glass-dark w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 hover:bg-sky-500 transition-all" aria-label="Twitter">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="https://wa.me/62811669387" target="_blank" rel="noopener noreferrer" class="glass-dark w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 hover:bg-green-600 transition-all" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">What I Do</h2>
-                <p class="text-gray-400 text-lg">My expertise across multiple domains</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Data Analyst -->
-                <div class="glass-dark rounded-3xl p-8 hover:scale-105 transition-all hover:shadow-2xl reveal">
-                    <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Data Analyst</h3>
-                    <p class="text-gray-300 mb-6">
-                        Turning complex data into actionable insights using Python, SQL, and advanced analytics tools.
-                    </p>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>✓ Data Visualization</li>
-                        <li>✓ Statistical Analysis</li>
-                        <li>✓ Business Intelligence</li>
-                        <li>✓ Predictive Modeling</li>
-                    </ul>
-                </div>
-                
-                <!-- Web Developer -->
-                <div class="glass-dark rounded-3xl p-8 hover:scale-105 transition-all hover:shadow-2xl reveal">
-                    <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-code text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Web Developer</h3>
-                    <p class="text-gray-300 mb-6">
-                        Building responsive and modern web applications with cutting-edge technologies.
-                    </p>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>✓ Frontend Development</li>
-                        <li>✓ Backend Solutions</li>
-                        <li>✓ Responsive Design</li>
-                        <li>✓ API Integration</li>
-                    </ul>
-                </div>
-                
-                <!-- Photographer -->
-                <div class="glass-dark rounded-3xl p-8 hover:scale-105 transition-all hover:shadow-2xl reveal">
-                    <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-camera text-3xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Photographer</h3>
-                    <p class="text-gray-300 mb-6">
-                        Capturing moments and creating visual stories that resonate and inspire.
-                    </p>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>✓ Sport, Portrait Photography, etc</li>
-                        <li>✓ Event Coverage</li>
-                        <li>✓ Photo Editing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Work</h2>
-                <p class="text-gray-400 text-lg">Selected projects across different domains</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Portfolio Item 1: Photography -->
-                <div id="portfolio-photo" class="portfolio-item group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gradient-to-br from-orange-600 to-red-600 cursor-pointer hover:scale-105 transition-all duration-300 reveal">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
-                        <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border-2 border-white/20">
-                            <i class="fas fa-camera text-4xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-1 text-white">Photography</h3>
-                        <p class="text-white/80 text-sm">Professional Works</p>
-                    </div>
-                    
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-gradient-to-t from-black via-black/95 to-black/80 flex items-center justify-center p-4">
-                        <div class="text-center w-full">
-                            <i class="fas fa-camera text-3xl mb-3 text-orange-400"></i>
-                            <h4 class="text-lg font-bold mb-2 text-white">Photography Portfolio</h4>
-                            <div class="flex gap-2 justify-center mb-3 text-xs">
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Portrait</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Event</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Sport</span>
-                            </div>
-                            <a href="https://instagram.com/motojr_" target="_blank" rel="noopener noreferrer" class="glass-dark px-5 py-2 rounded-full text-sm inline-flex items-center gap-2 hover:bg-white/20 transition-all mt-2 text-white">
-                                <i class="fab fa-instagram"></i>
-                                View Gallery
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 2: Landing Page -->
-                <div id="portfolio-landing" class="portfolio-item group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 cursor-pointer hover:scale-105 transition-all duration-300 reveal">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
-                        <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border-2 border-white/20">
-                            <i class="fas fa-code text-4xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-1 text-white">Landing Page</h3>
-                        <p class="text-white/80 text-sm">Web Development</p>
-                    </div>
-                    
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-gradient-to-t from-black via-black/95 to-black/80 flex items-center justify-center p-4">
-                        <div class="text-center w-full">
-                            <i class="fas fa-code text-3xl mb-3 text-purple-400"></i>
-                            <h4 class="text-lg font-bold mb-2 text-white">Portfolio Website</h4>
-                            <p class="text-xs text-gray-300 mb-3">Responsive • Glassmorphism • Cloud</p>
-                            <div class="flex gap-1 justify-center mb-3 text-xs">
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">HTML</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Tailwind</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Apache</span>
-                            </div>
-                            <a href="https://joereant.my.id" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-full text-sm inline-flex items-center gap-2 hover:scale-105 transition-all text-white">
-                                <i class="fas fa-external-link-alt text-xs"></i>
-                                View Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 3: Power BI -->
-                <div id="portfolio-powerbi" class="portfolio-item group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gradient-to-br from-blue-600 to-cyan-600 cursor-pointer hover:scale-105 transition-all duration-300 reveal">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-0">
-                        <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border-2 border-white/20">
-                            <i class="fas fa-chart-line text-4xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-1 text-white">Power BI</h3>
-                        <p class="text-white/80 text-sm">Data Analytics</p>
-                    </div>
-                    
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-gradient-to-t from-black via-black/95 to-black/80 flex items-center justify-center p-4">
-                        <div class="text-center w-full">
-                            <i class="fas fa-chart-bar text-3xl mb-3 text-cyan-400"></i>
-                            <h4 class="text-lg font-bold mb-2 text-white">Power BI Dashboard</h4>
-                            <p class="text-xs text-gray-300 mb-3">KPI Monitoring • Visualization</p>
-                            <div class="flex gap-1 justify-center mb-3 text-xs">
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">Power BI</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">SQL</span>
-                                <span class="bg-white/10 px-2 py-1 rounded text-white">DAX</span>
-                            </div>
-                            <div class="glass-dark px-4 py-2 rounded-full inline-flex items-center gap-2 text-sm text-white">
-                                <i class="fas fa-lock text-xs"></i>
-                                <span class="text-xs">Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 4: Coming Soon -->
-                <div id="portfolio-coming" class="portfolio-item group relative overflow-hidden rounded-3xl aspect-[4/3] bg-gradient-to-br from-slate-700 to-slate-900 cursor-pointer hover:scale-105 transition-all duration-300 reveal">
-                    <div class="absolute inset-0 opacity-5">
-                        <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;"></div>
-                    </div>
-                    
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6">
-                        <div class="w-20 h-20 border-4 border-white/20 border-t-white/60 rounded-full animate-spin mb-4"></div>
-                        <h3 class="text-2xl font-bold mb-1">Coming Soon</h3>
-                        <p class="text-white/60 text-sm">More Projects</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Let's Work Together</h2>
-            <p class="text-xl text-gray-300 mb-10">
-                Have a project in mind? Let's create something amazing together!
-            </p>
-            
-            <!-- Contact Form -->
-            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto mb-12 text-left glass-dark rounded-3xl p-8 shadow-2xl relative z-10">
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="f001fbe8-5060-4ef0-92bb-08947e1d57fe">
-                
-                <!-- Anti-Spam Honeypot -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <div class="mb-5">
-                    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                    <input type="text" name="name" id="name" required placeholder="John Doe"
-                           class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
-                </div>
-                
-                <div class="mb-5">
-                    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                    <input type="email" name="email" id="email" required placeholder="john@example.com"
-                           class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
-                </div>
-                
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Your Message</label>
-                    <textarea name="message" id="message" rows="4" required placeholder="Hi Joe, I'd like to collaborate on..."
-                              class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"></textarea>
-                </div>
-                
-                <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/20 active:scale-[0.98] cursor-pointer">
-                    <i class="fas fa-paper-plane mr-2"></i> Send Message
+        <nav class="sticky top-0 z-20 h-14 flex items-center justify-between px-6 md:px-10 backdrop-blur-sm border-b" style="background:var(--nav-bg);border-color:var(--border)">
+            <span class="font-mono text-[8px] tracking-[0.3em] uppercase hidden md:inline" style="color:var(--muted)">joereant.my.id</span>
+            <div class="flex items-center gap-4 md:gap-6">
+                <a href="#services" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Services</a>
+                <a href="#work" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Work</a>
+                <a href="#photo" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Photo</a>
+                <a href="#contact" class="nav-link font-mono text-[9px] tracking-[0.2em] uppercase hover:opacity-100 transition" style="color:var(--muted)">Contact</a>
+                <button id="themeToggle" class="text-sm hover:opacity-70 transition" style="color:var(--muted)" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
                 </button>
-            </form>
-
-            
-            <div class="flex gap-6 justify-center">
-                <a href="https://instagram.com/joereant" target="_blank" rel="noopener noreferrer" class="glass-dark w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition-all" aria-label="Instagram">
-                    <i class="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/joereant/" target="_blank" rel="noopener noreferrer" class="glass-dark w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 hover:bg-blue-600 transition-all" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in text-2xl"></i>
-                </a>
-                <a href="https://github.com/joereant" target="_blank" rel="noopener noreferrer" class="glass-dark w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 hover:bg-slate-800 transition-all" aria-label="GitHub">
-                    <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a href="https://x.com/joeReAnT" target="_blank" rel="noopener noreferrer" class="glass-dark w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 hover:bg-sky-500 transition-all" aria-label="Twitter">
-                    <i class="fab fa-twitter text-2xl"></i>
-                </a>
-                <a href="https://wa.me/62811669387" target="_blank" rel="noopener noreferrer" class="glass-dark w-14 h-14 rounded-full flex items-center justify-center hover:scale-110 hover:bg-green-600 transition-all" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp text-2xl"></i>
-                </a>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Footer -->
-    <footer class="py-8 px-4 border-t border-white/10">
-        <div class="max-w-6xl mx-auto text-center text-gray-400">
-            <p>&copy; 2025 JoeReant. All rights reserved.</p>
-            <p class="mt-2 text-sm">Made with ❤️ and creativity</p>
-        </div>
-    </footer>
+        <!-- HERO -->
+        <section id="hero" class="px-6 md:px-10 pt-14 md:pt-16 pb-10 md:pb-14 page-section flex flex-col justify-center" data-section="hero">
+            <div class="content-wrap reveal">
+                <p class="font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase text-white/25 mb-5">Intro</p>
+                <p class="font-display text-xl md:text-3xl lg:text-4xl text-white/80 font-bold leading-tight mb-6">
+                    I turn data into<br>
+                    decisions, ideas into<br>
+                    systems, and workflows<br>
+                    into automation.
+                </p>
+                <p class="font-hand text-lg md:text-xl text-white/30 mb-8 leading-relaxed">
+                    Photography is my creative edge — it's how I see what others miss. 
+                    Data analyst, web developer, and AI tinkerer based in Indonesia.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#work" class="inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-7 py-3.5 text-[10px] tracking-[0.25em] uppercase font-medium font-mono hover:opacity-85 transition">
+                        View Work <i class="fas fa-arrow-right text-[8px]"></i>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center gap-2 border border-white/[0.2] px-7 py-3.5 text-[10px] tracking-[0.25em] uppercase font-medium font-mono text-white/70 hover:text-white hover:border-white/40 transition">
+                        Contact
+                    </a>
+                </div>
+                <div class="flex items-center gap-5 mt-8">
+                    <a href="https://github.com/joereant" target="_blank" rel="noopener noreferrer" class="text-white/30 hover:text-white transition text-lg"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/joereant/" target="_blank" rel="noopener noreferrer" class="text-white/30 hover:text-white transition text-lg"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/joereant" target="_blank" rel="noopener noreferrer" class="text-white/30 hover:text-white transition text-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/joeReAnT" target="_blank" rel="noopener noreferrer" class="text-white/30 hover:text-white transition text-lg"><i class="fab fa-twitter"></i></a>
+                    <span class="w-px h-5 bg-white/10"></span>
+                    <a href="mailto:pilianjolo.reant@gmail.com" class="font-mono text-[11px] text-white/25 hover:text-white/50 transition">pilianjolo.reant@gmail.com</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/62811669387?text=Halo,%20saya%20tertarik%20dengan%20portfolio%20Anda" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 animate-float" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp text-3xl text-white"></i>
+        <!-- SERVICES -->
+        <section id="services" class="px-6 md:px-10 py-12 md:py-14 page-section flex flex-col justify-center" data-section="services">
+            <div class="content-wrap reveal">
+                <p class="font-mono text-[9px] tracking-[0.3em] uppercase text-white/25 mb-2">01</p>
+                <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight mb-6">What I Do</h2>
+            </div>
+            <div class="space-y-4 reveal">
+                <div class="service-card p-6 md:p-7 content-wrap">
+                    <div class="flex items-start gap-5">
+                        <span class="text-white/20 text-xl mt-0.5 shrink-0"><i class="fas fa-chart-bar"></i></span>
+                        <div>
+                            <h3 class="font-display text-lg font-semibold mb-2">Data Analytics</h3>
+                            <p class="text-sm md:text-base text-white/45 leading-relaxed">Python, SQL, Power BI, Tableau — clean dashboards and reports that drive business decisions with real-time data.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Python</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">SQL</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Power BI</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Tableau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card p-6 md:p-7 content-wrap">
+                    <div class="flex items-start gap-5">
+                        <span class="text-white/20 text-xl mt-0.5 shrink-0"><i class="fas fa-code"></i></span>
+                        <div>
+                            <h3 class="font-display text-lg font-semibold mb-2">Web Development</h3>
+                            <p class="text-sm md:text-base text-white/45 leading-relaxed">Tailwind, vanilla JS, Nginx, Docker — from landing pages to full-stack apps, deployed and secured.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">HTML/CSS</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">JavaScript</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Nginx</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card p-6 md:p-7 content-wrap">
+                    <div class="flex items-start gap-5">
+                        <span class="text-white/20 text-xl mt-0.5 shrink-0"><i class="fas fa-brain"></i></span>
+                        <div>
+                            <h3 class="font-display text-lg font-semibold mb-2">AI Solutions</h3>
+                            <p class="text-sm md:text-base text-white/45 leading-relaxed">LLMs, automation, machine learning — building smarter workflows that save time, reduce errors, and scale.</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">AI/ML</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Python</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">Automation</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-1 text-white/25">LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section id="work" class="px-6 md:px-10 py-12 md:py-14 page-section flex flex-col justify-center" data-section="work">
+            <div class="content-wrap reveal">
+                <p class="font-mono text-[9px] tracking-[0.3em] uppercase text-white/25 mb-2">02</p>
+                <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight mb-6">Selected Work</h2>
+            </div>
+            <div class="reveal">
+                <div class="project-row py-5 md:py-6">
+                    <div class="flex items-start gap-5">
+                        <div class="w-24 md:w-32 shrink-0 aspect-[4/3] overflow-hidden border border-white/[0.06]">
+                            <img src="assets/images/project-website.jpg" alt="CRM" class="w-full h-full object-cover proj-img">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="font-mono text-[8px] tracking-[0.2em] text-white/20">01</span>
+                            <h3 class="font-display text-lg font-semibold mt-1">CRM & Sales Systems</h3>
+                            <p class="text-sm md:text-base text-white/45 mt-1 mb-2">Internal sales management system for enterprise — tracking releases, volume, revenue. Production deployment with full admin panel and audit trail.</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Laravel</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">PostgreSQL</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Production</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-row py-5 md:py-6">
+                    <div class="flex items-start gap-5">
+                        <div class="w-24 md:w-32 shrink-0 aspect-[4/3] overflow-hidden border border-white/[0.06]">
+                            <img src="assets/images/project-dashboard.jpg" alt="Analytics" class="w-full h-full object-cover proj-img">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="font-mono text-[8px] tracking-[0.2em] text-white/20">02</span>
+                            <h3 class="font-display text-lg font-semibold mt-1">Sales Data Analytics</h3>
+                            <p class="text-sm md:text-base text-white/45 mt-1 mb-2">Custom analytics dashboard processing 1.33M+ rows — FastAPI backend, D3.js visualizations, PostgreSQL materialized views. KPI monitoring, logistics analysis, location intelligence.</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">FastAPI</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">D3.js</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Python</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-row py-5 md:py-6">
+                    <div class="flex items-start gap-5">
+                        <div class="w-24 md:w-32 shrink-0 aspect-[4/3] overflow-hidden border border-white/[0.06]">
+                            <div class="w-full h-full bg-gradient-to-br from-white/[0.03] to-white/[0.01] flex items-center justify-center">
+                                <span class="font-mono text-[7px] tracking-[0.3em] uppercase text-white/15">BI</span>
+                            </div>
+                        </div>
+                        <div class="min-w-0">
+                            <span class="font-mono text-[8px] tracking-[0.2em] text-white/20">03</span>
+                            <h3 class="font-display text-lg font-semibold mt-1">Dashboard & Monitoring</h3>
+                            <p class="text-sm md:text-base text-white/45 mt-1 mb-2">Power BI dashboards for operational KPI tracking — SQL backend, DAX measures, real-time refresh. Internal tools for decision support.</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Power BI</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">SQL</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">DAX</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Confidential</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTOGRAPHY -->
+        <section id="photo" class="px-6 md:px-10 py-12 md:py-14 page-section flex flex-col justify-center" data-section="photo">
+            <div class="content-wrap reveal">
+                <p class="font-mono text-[9px] tracking-[0.3em] uppercase text-white/25 mb-2">03</p>
+                <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight mb-5">Photography</h2>
+                <p class="text-sm md:text-base text-white/50 leading-relaxed mb-6">
+                    Photography trains my eye for detail — composition, timing, and lighting 
+                    are the same skills I bring to data and code. Shooting with Nikon D3s, 
+                    D200, and D300s, covering sports, portraits, and street photography.
+                </p>
+                <div class="grid grid-cols-3 gap-3 mb-6">
+                    <div class="border border-white/[0.06] p-4">
+                        <p class="font-mono text-[7px] tracking-[0.2em] uppercase text-white/25 mb-1">Primary</p>
+                        <p class="font-display text-base font-semibold">Nikon D3s</p>
+                        <p class="font-mono text-[8px] text-white/30">Full-frame · 12 MP</p>
+                    </div>
+                    <div class="border border-white/[0.06] p-4">
+                        <p class="font-mono text-[7px] tracking-[0.2em] uppercase text-white/25 mb-1">Special One</p>
+                        <p class="font-display text-base font-semibold">Nikon D200</p>
+                        <p class="font-mono text-[8px] text-white/30">DX · 10 MP</p>
+                    </div>
+                    <div class="border border-white/[0.06] p-4">
+                        <p class="font-mono text-[7px] tracking-[0.2em] uppercase text-white/25 mb-1">Secondary</p>
+                        <p class="font-display text-base font-semibold">Nikon D300s</p>
+                        <p class="font-mono text-[8px] text-white/30">DX · 12 MP</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 mb-6">
+                    <a href="https://instagram.com/joereant" target="_blank" class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase text-white/50 hover:text-white border-b border-white/20 hover:border-white transition">
+                        <i class="fab fa-instagram"></i> @joereant
+                    </a>
+                    <span class="text-white/15 text-[8px]">·</span>
+                    <a href="https://instagram.com/motojr_" target="_blank" class="flex items-center gap-2 font-mono text-[9px] tracking-[0.2em] uppercase text-white/50 hover:text-white border-b border-white/20 hover:border-white transition">
+                        <i class="fab fa-instagram"></i> @motojr_
+                    </a>
+                </div>
+                <p class="font-hand text-base text-white/20">
+                    "A spreadsheet and a camera have more in common than you think."
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="px-6 md:px-10 py-12 md:py-14 page-section flex flex-col justify-center" data-section="contact">
+            <div class="content-wrap reveal">
+                <p class="font-mono text-[9px] tracking-[0.3em] uppercase text-white/25 mb-2">04</p>
+                <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4">Contact</h2>
+                <p class="text-sm md:text-base text-white/50 leading-relaxed mb-6">
+                    Open for data analysis, web development, and AI projects. 
+                    Photography commissions also welcome — let's talk.
+                </p>
+            </div>
+            <div class="content-wrap reveal">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f001fbe8-5060-4ef0-92bb-08947e1d57fe">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <div class="mb-4">
+                        <input type="text" name="name" required placeholder="Name" class="w-full bg-transparent border border-white/[0.08] px-4 py-3.5 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/30 transition font-mono">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" required placeholder="Email" class="w-full bg-transparent border border-white/[0.08] px-4 py-3.5 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/30 transition font-mono">
+                    </div>
+                    <div class="mb-5">
+                        <textarea name="message" rows="4" required placeholder="Message" class="w-full bg-transparent border border-white/[0.08] px-4 py-3.5 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/30 transition font-mono resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-[#0A0A0A] py-3.5 font-mono text-[10px] tracking-[0.25em] uppercase font-medium hover:opacity-85 transition">Send Message</button>
+                </form>
+            </div>
+            <div class="content-wrap mt-6 pt-5 border-t border-white/[0.04] reveal">
+                <div class="flex flex-wrap gap-5 items-center justify-between">
+                    <div class="space-y-2">
+                        <a href="mailto:pilianjolo.reant@gmail.com" class="flex items-center gap-2.5 text-sm text-white/40 hover:text-white transition font-mono text-xs"><i class="fas fa-envelope text-white/20 w-4"></i> pilianjolo.reant@gmail.com</a>
+                        <a href="https://wa.me/62811669387" target="_blank" class="flex items-center gap-2.5 text-sm text-white/40 hover:text-white transition font-mono text-xs"><i class="fab fa-whatsapp text-white/20 w-4"></i> +62 811-6693-87</a>
+                    </div>
+                    <div class="flex gap-3.5">
+                        <a href="https://github.com/joereant" target="_blank" class="w-10 h-10 border border-white/[0.08] flex items-center justify-center hover:bg-white hover:text-[#0A0A0A] transition-all text-white/35 hover:border-white text-sm"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/joereant/" target="_blank" class="w-10 h-10 border border-white/[0.08] flex items-center justify-center hover:bg-white hover:text-[#0A0A0A] transition-all text-white/35 hover:border-white text-sm"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/joereant" target="_blank" class="w-10 h-10 border border-white/[0.08] flex items-center justify-center hover:bg-white hover:text-[#0A0A0A] transition-all text-white/35 hover:border-white text-sm"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/joeReAnT" target="_blank" class="w-10 h-10 border border-white/[0.08] flex items-center justify-center hover:bg-white hover:text-[#0A0A0A] transition-all text-white/35 hover:border-white text-sm"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="px-6 md:px-10 py-6 border-t border-white/[0.04]">
+            <div class="content-wrap flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                <p class="font-mono text-[8px] tracking-[0.3em] uppercase text-white/20">&copy; 2026 Joe Reant</p>
+                <p class="font-mono text-[8px] tracking-[0.3em] uppercase text-white/20">Split Screen v1.0</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <a href="https://wa.me/62811669387?text=Halo,%20saya%20tertarik%20dengan%20portfolio%20Anda"
+       target="_blank" class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-white text-[#0A0A0A] flex items-center justify-center hover:scale-105 transition-all shadow-lg" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- JavaScript -->
     <script>
-        // Loading Screen
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.style.display = 'none';
-            }, 500);
-        });
+        (function() {
+            var layers = document.querySelectorAll('.photo-layer');
+            var dots = document.querySelectorAll('.slide-dot');
+            var sections = document.querySelectorAll('[data-section]');
+            var map = { hero: 0, services: 1, work: 2, photo: 3, contact: 4 };
+            var total = layers.length, cur = 0, timer;
 
-        // Theme Toggle Function
-        function toggleTheme() {
-            const body = document.body;
-            const icon = document.getElementById('theme-icon');
-            
-            body.classList.toggle('light-mode');
-            
-            if (body.classList.contains('light-mode')) {
-                icon.className = 'fas fa-sun text-2xl';
-                localStorage.setItem('theme', 'light');
-            } else {
-                icon.className = 'fas fa-moon text-2xl';
-                localStorage.setItem('theme', 'dark');
+            function goTo(idx) {
+                cur = ((idx % total) + total) % total;
+                layers.forEach(function(l, i) { l.classList.toggle('active', i === cur); });
+                dots.forEach(function(d, i) { d.style.background = i === cur ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.2)'; });
             }
-        }
-        
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+
+            function next() { goTo(cur + 1); }
+
+            function startAuto() { clearInterval(timer); timer = setInterval(next, 4000); }
+
+            function onScroll() {
+                var c = 'hero', min = Infinity;
+                sections.forEach(function(s) {
+                    var d = Math.abs(s.getBoundingClientRect().top);
+                    if (d < min) { min = d; c = s.getAttribute('data-section'); }
+                });
+                goTo(map[c] !== undefined ? map[c] : 0);
+                startAuto();
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+            startAuto();
+
+            var sx = 0;
+            document.querySelector('.split-left').addEventListener('touchstart', function(e) {
+                sx = e.changedTouches[0].screenX;
+                clearInterval(timer);
             });
-        });
-        
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            document.querySelector('.split-left').addEventListener('touchend', function(e) {
+                var dx = sx - e.changedTouches[0].screenX;
+                if (Math.abs(dx) > 50) {
+                    if (dx > 0) next(); else goTo(cur - 1);
+                }
+                startAuto();
+            });
+        })();
+
+        // Theme toggle
+        (function() {
+            var html = document.documentElement;
+            var btn = document.getElementById('themeToggle');
+            var icon = document.getElementById('themeIcon');
+            var stored = localStorage.getItem('theme');
+            if (stored === 'light') html.classList.add('light');
+
+            function setIcon() {
+                icon.className = html.classList.contains('light') ? 'fas fa-sun' : 'fas fa-moon';
+            }
+            setIcon();
+
+            if (btn) {
+                btn.addEventListener('click', function() {
+                    html.classList.toggle('light');
+                    localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark');
+                    setIcon();
+                });
+            }
+        })();
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+            a.addEventListener('click', function(e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                var t = document.querySelector(this.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth' });
             });
         });
 
-        // Scroll to Top Button
-        const scrollTopBtn = document.getElementById('scrollTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.remove('hidden');
-                scrollTopBtn.classList.add('flex');
-            } else {
-                scrollTopBtn.classList.add('hidden');
-                scrollTopBtn.classList.remove('flex');
-            }
-        });
-        
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Scroll Reveal Animation
         function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            reveals.forEach(element => {
-                const windowHeight = window.innerHeight;
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    element.classList.add('active');
-                }
-            });
+            var els = document.querySelectorAll('.reveal');
+            for (var i = 0; i < els.length; i++) {
+                if (els[i].getBoundingClientRect().top < window.innerHeight - 60) els[i].classList.add('active');
+            }
         }
-        
         window.addEventListener('scroll', reveal);
-        reveal(); // Initial check
+        reveal();
     </script>
 
-    <!-- Cloudflare Web Analytics (tracking visitor) -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015' 
-            integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" 
-            data-cf-beacon='{"version":"2024.11.0","token":"6ff388329e57493d98985eb982b15e87","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' 
-            crossorigin="anonymous"></script>
-
+    <!-- Cloudflare Web Analytics — enabled on production only -->
 </body>
 </html>

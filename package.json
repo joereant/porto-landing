@@ -1,17 +1,18 @@
 {
   "name": "porto-landing",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "[![Website](https://img.shields.io/badge/Website-joereant.my.id-blueviolet?style=for-the-badge)](https://joereant.my.id) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Joe_Reant-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joereant/)",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css --minify",
+    "watch": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joereant/porto-landing.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Joe Reant",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
