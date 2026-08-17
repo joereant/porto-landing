@@ -320,28 +320,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-row py-5 md:py-6">
+                <button type="button" data-open-brand class="project-row py-5 md:py-6 w-full text-left block cursor-pointer">
                     <div class="flex items-start gap-5">
                         <div class="w-24 md:w-32 shrink-0 aspect-[4/3] overflow-hidden border border-white/[0.06]">
-                            <img src="https://filanogroup.com/assets/img/1.jpeg" alt="FVF Landing Page" class="w-full h-full object-cover proj-img" loading="lazy">
+                            <div class="w-full h-full bg-gradient-to-br from-white/[0.03] to-white/[0.01] flex items-center justify-center">
+                                <span class="font-mono text-[7px] tracking-[0.3em] uppercase text-white/15">WEB</span>
+                            </div>
                         </div>
                         <div class="min-w-0">
                             <span class="font-mono text-[8px] tracking-[0.2em] text-white/20">04</span>
-                            <h3 class="font-display text-lg font-semibold mt-1">
-                                <a href="https://filanogroup.com" target="_blank" rel="noopener noreferrer" class="hover:text-white/70 transition">
-                                    FVF Corporate Landing <i class="fas fa-external-link-alt text-[8px] text-white/25 align-middle"></i>
-                                </a>
-                            </h3>
-                            <p class="text-sm md:text-base text-white/45 mt-1 mb-2">Corporate landing page for PT. Filano Vinkha Faliha — general contractor & heavy equipment. 3 design concepts, company profile PDF, WhatsApp CRM integration, deployed with Docker + Nginx via Cloudflare Tunnel. LIVE: filanogroup.com</p>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">HTML/Tailwind</span>
-                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Docker</span>
+                            <h3 class="font-display text-lg font-semibold mt-1">Digital Brand Web <i class="fas fa-arrow-right text-[8px] text-white/25 align-middle"></i></h3>
+                            <p class="text-sm md:text-base text-white/45 mt-1 mb-2">Company landing pages & digital brand websites — from concept to live deployment.</p>
+                            <span class="font-mono text-[8px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition">View Projects (2) <i class="fas fa-folder-open text-[8px]"></i></span>
+                            <div class="flex flex-wrap gap-1.5 mt-2">
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Landing Page</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Tailwind</span>
+                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Nginx</span>
                                 <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Cloudflare</span>
-                                <span class="font-mono text-[7px] tracking-wider uppercase border border-white/[0.08] px-2 py-0.5 text-white/25">Live</span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </button>
             </div>
         </section>
 
@@ -438,6 +437,48 @@
 
     </div>
 
+    <!-- BRAND WEB MODAL -->
+    <div id="brand-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 md:p-8">
+        <div class="absolute inset-0 bg-black/80" data-close-brand></div>
+        <div class="relative w-full max-w-lg bg-[#0E0E0E] border border-white/[0.1] max-h-[85vh] overflow-y-auto">
+            <div class="flex items-center justify-between px-6 py-5 border-b border-white/[0.06] sticky top-0" style="background:var(--bg)">
+                <div>
+                    <p class="font-mono text-[8px] tracking-[0.3em] uppercase text-white/25 mb-1">04 · Digital Brand Web</p>
+                    <h3 class="font-display text-xl font-bold">Company Landing Pages</h3>
+                </div>
+                <button type="button" data-close-brand class="w-10 h-10 border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="px-6 py-6 space-y-4">
+                <a href="https://filanogroup.com" target="_blank" rel="noopener noreferrer" class="block border border-white/[0.08] hover:border-white/25 p-5 transition group">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h4 class="font-display text-lg font-semibold group-hover:text-white/70 transition">PT. Filano Vinkha Faliha</h4>
+                                <i class="fas fa-external-link-alt text-[8px] text-white/25"></i>
+                            </div>
+                            <p class="font-mono text-[8px] tracking-[0.2em] uppercase text-white/25 mt-1 mb-2">Corporate Landing · General Contractor</p>
+                            <p class="text-sm text-white/45 leading-relaxed mb-3">Landing page live untuk client — 3 konsep desain, company profile PDF, integrasi WhatsApp, deploy Docker + Nginx via Cloudflare Tunnel.</p>
+                            <span class="font-mono text-[9px] tracking-[0.2em] uppercase text-white/40">filanogroup.com</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://joereant.my.id" target="_blank" rel="noopener noreferrer" class="block border border-white/[0.08] hover:border-white/25 p-5 transition group">
+                    <div class="flex items-start justify-between gap-4">
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h4 class="font-display text-lg font-semibold group-hover:text-white/70 transition">Joe Reant — Personal Portfolio</h4>
+                                <i class="fas fa-external-link-alt text-[8px] text-white/25"></i>
+                            </div>
+                            <p class="font-mono text-[8px] tracking-[0.2em] uppercase text-white/25 mt-1 mb-2">Personal Brand Website · 2026</p>
+                            <p class="text-sm text-white/45 leading-relaxed mb-3">Split-screen portfolio ini sendiri — data analytics, web dev, photography. Static hosting via Nginx + Cloudflare Tunnel.</p>
+                            <span class="font-mono text-[9px] tracking-[0.2em] uppercase text-white/40">joereant.my.id</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <a href="https://wa.me/62811669387?text=Halo,%20saya%20tertarik%20dengan%20portfolio%20Anda"
        target="_blank" class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-white text-[#0A0A0A] flex items-center justify-center hover:scale-105 transition-all shadow-lg" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
@@ -506,6 +547,16 @@
         }
         window.addEventListener('scroll', reveal);
         reveal();
+
+        // Brand Web modal
+        var brandModal = document.getElementById('brand-modal');
+        document.querySelectorAll('[data-open-brand]').forEach(function(b) {
+            b.addEventListener('click', function() { brandModal.classList.remove('hidden'); brandModal.classList.add('flex'); document.body.style.overflow = 'hidden'; });
+        });
+        document.querySelectorAll('[data-close-brand]').forEach(function(b) {
+            b.addEventListener('click', function() { brandModal.classList.add('hidden'); brandModal.classList.remove('flex'); document.body.style.overflow = ''; });
+        });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') brandModal.classList.add('hidden'); });
     </script>
 
     <!-- Cloudflare Web Analytics — enabled on production only -->
